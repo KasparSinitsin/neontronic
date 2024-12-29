@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeonTronic: The Robotic Circus</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./output.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Zen+Dots&display=swap');
+    </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="scroll-smooth bg-gray-950">
+  <header>
+    <section class="flex justify-between items-center flex-col md:flex-row px-8 py-3 mb-4" style="font-family: 'Zen Dots', serif;">
+      <!-- Left Navigation Bar" -->
+      <nav class="flex space-x-6 lg:ml-20">
+        <a href="#gallery" class="text-white text-lg">Gallery</a>
+        <a href="#future-is-here" class="text-white text-lg">Shows</a>
+        <a href="#innovations" class="text-white text-lg">Innovations</a>
+      </nav>
+    
+      <img class="w-[132.249px] h-[119.748px] rounded-full" src="./img/logo-animated.gif" alt="Animated logo of NeonTronic: The Robotic Circus">
+    
+      <!-- Right Navigation Bar" -->
+      <nav class="flex space-x-6 lg:mr-20">
+        <a href="#schedule" class="text-white text-lg">Schedule</a>
+        <a href="#tickets" class="text-white text-lg">Tickets</a>
+        <a href="#contact" class="text-white text-lg">Contact</a>
+      </nav>
+    </section>
+    <section class="relative flex items-center justify-center">
+       <!-- Glowing Top Border -->
+       <div class="absolute top-0 left-0 w-full h-5 bg-gradient-to-r from-pink-500 to-pink-300 blur-lg opacity-80 z-10"></div>
+      <div class="relative flex items-center justify-center">
+        <div class="lg:mx-40">
+          <!-- Hourglass container -->
+          <div class="relative w-48 h-72 lg:w-[500px] lg:h-[600px] z-0">
+      
+            <!-- Top Triangle with Glow -->
+            <div id="top-triangle" class="absolute top-0 left-0 w-full h-1/2 triangle">
+              <!-- Outer Glow Triangle -->
+              <div class="absolute top-0 left-0 w-full h-full scale-110 blur-lg opacity-75 -z-10
+                          transition-all duration-300 group-hover:opacity-100 group-hover:scale-125 group-hover:blur-xl"
+                   style="clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+                          background: linear-gradient(to right, #ff00ff, #ff33cc, #ff66ff);">
+              </div>
+              <!-- Image Triangle -->
+              <div class="w-full h-full overflow-hidden"
+                   style="clip-path: polygon(50% 100%, 0% 0%, 100% 0%);">
+                <div class="w-full h-full bg-cover bg-center transition-transform duration-700 hover:scale-90"
+                     style="background-image: url('./img/hero1.jpg');">
+                </div>
+              </div>
+            </div>
+      
+            <!-- Bottom Triangle with Glow -->
+            <div id="bottom-triangle" class="absolute bottom-0 left-0 w-full h-1/2 triangle">
+              <!-- Outer Glow Triangle -->
+              <div class="absolute top-0 left-0 w-full h-full scale-110 blur-lg opacity-75 -z-10
+                          transition-all duration-300 group-hover:opacity-100 group-hover:scale-125 group-hover:blur-xl"
+                   style="clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                          background: linear-gradient(135deg, #ffd700, #ffcc33, #ffb700, #ffe680, #ffc700);">
+              </div>
+              <!-- Image Triangle -->
+              <div class="w-full h-full overflow-hidden"
+                   style="clip-path: polygon(50% 0%, 0% 100%, 100% 100%);">
+                <div class="w-full h-full bg-cover bg-center transition-transform duration-700 hover:scale-90"
+                     style="background-image: url('./img/hero2.jpg');">
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+  <!-- Left Anchor Link -->
+<a id="left-anchor" href="#future-is-here" 
+class="absolute left-[80px] top-1/2 transform -translate-y-1/2 flex flex-col items-center group 
+       md:left-[150px] lg:left-[300px] md-large:left-[350px] xl:left-[400px]"
+style="font-family: 'Bungee Shade', sans-serif;">
+<!-- Polygon -->
+<div class="w-16 h-16 lg:w-20 lg:h-20 bg-gray-900 group-hover:bg-gray-400 shadow-lg"
+    style="clip-path: polygon(100% 50%, 0% 0%, 0% 100%);">
+</div>
+<!-- Text -->
+<p class="text-gray-300 mt-4 group-hover:text-white text-l md:text-3xl transition-opacity duration-300 z-10">
+ The Future
+</p>
+<p class="text-gray-300 mt-2 group-hover:text-white md:text-2xl transition-opacity duration-300 z-10">
+ Is Here
+</p>
+</a>
+
+<!-- Right Anchor Link -->
+<a id="right-anchor" href="#mechanical-wonderland" 
+class="absolute right-[80px] top-1/2 transform -translate-y-1/2 flex flex-col items-center group 
+       md:right-[150px] lg:right-[300px] md-large:right-[350px] xl:right-[400px]"
+style="font-family: 'Bungee Shade', sans-serif;">
+<!-- Polygon -->
+<div class="w-16 h-16 lg:w-20 lg:h-20 bg-gray-900 group-hover:bg-gray-400 shadow-lg"
+    style="clip-path: polygon(0% 50%, 100% 0%, 100% 100%);">
+</div>
+<!-- Text -->
+<p class="text-gray-300 mt-4 group-hover:text-white text-l md:text-3xl transition-opacity duration-300 z-10">
+ Mechanical
+</p>
+<p class="text-gray-300 mt-2 group-hover:text-white md:text-2xl transition-opacity duration-300 z-10">
+ Wonderland
+</p>
+</a>
+
+    </section>
+     <!-- Glowing Bottom Border -->
+     <div class="absolute bottom-25 left-0 w-full h-4 bg-gradient-to-r from-yellow-500 to-yellow-300 blur-lg opacity-80 z-10"></div>
+  </header>
+  <main>
+    <article id="gallery1">
+    <div id="gallery" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true" data-bs-interval="2800">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/img1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/img2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/img3.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/img4.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/img5.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/img6.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+       <!-- Glowing Bottom Border -->
+       <div class="absolute bottom-[16px] left-0 w-full h-4 bg-gradient-to-r from-cyan-400 to-teal-300 blur-lg opacity-80 z-10"></div>
+    </div>
+    <section id="welcome" class="text-white py-16 px-8">
+      <div class="text-center max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-pink-500 mb-6">
+          Welcome to NeonTronic: <span class="text-white">The One and Only Robotic Circus!</span>
+        </h2>
+        <p class="text-lg md:text-xl leading-relaxed mb-8">
+          Step into a world where futuristic technology meets awe-inspiring performance! NeonTronic is not just another circus; it's an experience that fuses cutting-edge robotics, neon lights, and thrilling entertainment. Watch as our mechanical performers defy gravity and bring the magic of the circus to life with their incredible precision and skill.
+        </p>
+        <p class="text-lg md:text-xl leading-relaxed mb-8">
+          Join us for an unforgettable journey through the world of mechanical wonders, stunning visual effects, and an atmosphere that will leave you on the edge of your seat. Get ready to be amazed by the extraordinary talents of our robotic cast, who push the limits of technology and artistry.
+        </p>
+       
+      </div>
+    </section>
+  </article>
+      
+  <article id="future-is-here" class="relative">
+    <!-- Glowing Top Border -->
+    <div class="relative top-0 left-0 w-full h-5 bg-gradient-to-r from-pink-500 to-pink-300 blur-lg opacity-80 z-10"></div>
+    <img src="./img/tfis.jpeg" class="d-block flex justify-center mx-auto rounded-lg w-1/2" alt="...">
+    <section class="text-white px-8">
+      <div class="text-center max-w-3xl mt-8 mx-auto">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-pink-500 mb-6" style="font-family: 'Bungee Shade', sans-serif;">
+          The Future Is Here
+        </h2>
+        <p class="text-lg md:text-xl leading-relaxed">
+          Experience the future of entertainment like never before!
+        </p>
+        <p class="text-lg md:text-xl leading-relaxed mb-8">
+          <span class="text-pink-500">The Future Is Here</span> showcases a breathtaking symphony of robotic acrobatics, dazzling neon lights, and cutting-edge technology. Our mechanical performers will amaze you with their precision, creativity, and otherworldly abilities. 
+        </p>
+        <p class="pb-16 text-lg md:text-xl leading-relaxed">
+          This show is a tribute to the limitless possibilities of innovation. Marvel as robots interact seamlessly with state-of-the-art visual effects, defying the boundaries of what machines can do. Prepare to be transported to a futuristic realm where technology becomes art.
+        </p>
+      </div>
+    </section>
+  
+    <!-- Call-to-Action -->
+    <a href="#tickets" 
+       class="absolute bottom-0 left-0 w-80 h-80 bg-pink-500 text-gray-950 text-xl flex items-center justify-center font-bold hover:bg-pink-600 group"
+       style="clip-path: polygon(0% 0%, 100% 100%, 0% 100%);">
+      <span class="pt-8 rotate-45 leading-10 transform transition-transform duration-300 group-hover:scale-150" style="font-family: 'Zen Dots', serif;">Get Tickets</span>
+    </a>
+  </article>
+  
+  <article id="mechanical-wonderland" class="relative pb-16">
+    <div class="relative top-0 left-0 w-full h-5 bg-gradient-to-r from-yellow-500 to-yellow-300 blur-lg opacity-80 z-10"></div>
+    <section class="px-8">
+      <img src="./img/mw.jpeg" class="d-block flex justify-center mx-auto rounded-lg w-1/2" alt="...">
+      <div class="text-white text-center max-w-3xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-yellow-500 my-6" style="font-family: 'Bungee Shade', sans-serif;">
+          Mechanical Wonderland
+        </h2>
+        <p class="text-lg md:text-xl leading-relaxed">
+          Enter a fantastical realm where mechanical marvels come to life!
+        </p>
+        <p class="text-lg md:text-xl leading-relaxed">
+          <span class="text-yellow-500">Mechanical Wonderland</span> invites you on a journey into a dazzling steampunk universe, filled with intricate clockwork creations, lifelike automata, and many other awe-inspiring mechanical spectacles.
+        </p>
+        <p class="text-lg md:text-xl leading-relaxed">
+          From elegant robotic dancers powered by steam to majestic mechanical creatures, every performance combines Victorian elegance with futuristic ingenuity. Be captivated as art, engineering, and imagination converge in a breathtaking celebration of steampunk innovation.
+        </p>
+      </div> 
+    </section>
+  
+    <!-- Call-to-Action -->
+    <a href="#tickets" 
+       class="absolute bottom-0 right-0 w-80 h-80 bg-yellow-500 text-gray-950 text-xl flex items-center justify-center font-bold hover:bg-yellow-400 group"
+       style="clip-path: polygon(100% 0%, 100% 100%, 0% 100%);">
+      <span class="pt-8 -rotate-45 leading-10 transform transition-transform duration-300 group-hover:scale-150" style="font-family: 'Zen Dots', serif;">Get Tickets</span>
+    </a>
+  </article>
+
+  <article id="innovations" class="relative">
+    <!-- Glowing Top Border -->
+    <div class="absolute top-0 left-0 w-full h-5 bg-gradient-to-r from-cyan-400 to-teal-300 blur-lg opacity-80 z-10"></div>
+  
+    <!-- Section 1 -->
+    <div class="flex flex-col md:flex-row items-center mb-12 gap-8">
+      <img class="w-full md:w-1/4 h-auto rounded-lg" src="./img/i1v.jpeg" alt="...">
+      <div class="text-center md:text-left max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-pink-500">
+          Innovations: <span class="text-white">A New Era of Robotics and Entertainment</span>
+        </h2>
+        <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed my-6">
+          Innovation drives everything we do at <span class="text-cyan-400">Neon</span><span class="text-teal-300">Tronic</span>, and nowhere is that more apparent than in our groundbreaking robotic performers. These advanced machines are designed with unparalleled precision, combining the latest in artificial intelligence, engineering, and emotional interaction.
+        </p>
+        <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed my-6">
+          From lifelike motions to responsive behaviors, our robots are built to connect with audiences on a personal level, bridging the gap between human emotion and mechanical perfection. These creations represent the future of robotics — machines that aren’t just tools but companions, seamlessly blending utility with personality.
+        </p>
+      </div>
+      <img class="w-full md:w-1/4 h-auto rounded-lg" src="./img/i2v.jpeg" alt="...">
+    </div>
+  
+    <!-- Section 2 -->
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <img class="w-full md:w-1/4 h-auto rounded-lg" src="./img/i3v.jpeg" alt="...">
+      <div class="text-center md:text-left max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white">
+          Mechanical Marvels <span class="text-yellow-500">in Action</span>
+        </h2>
+        <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed mt-6">
+          Our mechanical attractions push the boundaries of imagination, showcasing the beauty of synchronized motion and complex engineering. These feats of innovation rely on precision mechanics, kinetic artistry, and groundbreaking software to deliver performances that leave audiences breathless.
+        </p>
+        <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed mt-6">
+          For thrill-seekers, the spectacle of our juggling bot will leave you spellbound. This mechanical performer effortlessly juggles golden balls, defying gravity with smooth precision. The artistry of its design and the complexity of its algorithms showcase the perfect blend of mechanical and creative.
+        </p>
+        <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed mt-6">
+          Such attractions reflect the heart of <span class="text-cyan-400">Neon</span><span class="text-teal-300">Tronic</span><span class="text-teal-200">’s</span> mission: to transform raw technology into mesmerizing art, captivating and inspiring in equal measure.
+        </p>
+      </div>
+      <img class="w-full md:w-1/4 h-auto rounded-lg" src="./img/i4v.jpeg" alt="...">
+    </div>
+  </article>
+  <article id="schedule" class="relative">
+     <!-- Glowing Top Border -->
+     <div class="absolute top-0 left-0 w-full h-5 bg-gradient-to-r from-pink-500 to-pink-300 blur-lg opacity-80 z-10"></div>
+     <section id="schedule" class="text-white py-16 px-8">
+      <!-- Heading -->
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4 text-cyan-500">Schedule</h2>
+        <p class="text-lg leading-relaxed">
+          Experience the wonders of cutting-edge robotics or step into a steampunk dreamscape full of whimsical creations!
+        </p>
+      </div>
+    
+      <!-- Schedule Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Weekday Schedule -->
+        <div class="bg-gray-800 rounded-lg p-8 shadow-lg">
+          <h3 class="text-2xl font-bold mb-4 text-yellow-500" style="font-family: 'Zen Dots', serif;">Monday to Friday</h3>
+          <ul class="space-y-4">
+            <li class="flex items-center">
+              <span class="bg-yellow-500 text-gray-900 font-semibold rounded-full w-8 h-8 flex justify-center items-center mr-4">•</span>
+              <p class="text-lg"><strong>Evening Show:</strong> 7:00 PM – 9:00 PM</p>
+            </li>
+            <li class="flex items-center">
+              <span class="bg-yellow-500 text-gray-900 font-semibold rounded-full w-8 h-8 flex justify-center items-center mr-4">•</span>
+              <p class="text-lg"><strong>Night Show:</strong> 9:30 PM – 11:30 PM</p>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Weekend Schedule -->
+        <div class="bg-gray-800 rounded-lg p-8 shadow-lg">
+          <h3 class="text-2xl font-bold mb-4 text-pink-500" style="font-family: 'Zen Dots', serif;">Saturday and Sunday</h3>
+          <ul class="space-y-4">
+            <li class="flex items-center">
+              <span class="bg-pink-500 text-gray-900 font-semibold rounded-full w-8 h-8 flex justify-center items-center mr-4">•</span>
+              <p class="text-lg"><strong>Morning Show:</strong> 10:00 AM – 12:00 PM</p>
+            </li>
+            <li class="flex items-center">
+              <span class="bg-pink-500 text-gray-900 font-semibold rounded-full w-8 h-8 flex justify-center items-center mr-4">•</span>
+              <p class="text-lg"><strong>Afternoon Show:</strong> 3:00 PM – 5:00 PM</p>
+            </li>
+            <li class="flex items-center">
+              <span class="bg-pink-500 text-gray-900 font-semibold rounded-full w-8 h-8 flex justify-center items-center mr-4">•</span>
+              <p class="text-lg"><strong>Evening Show:</strong> 6:00 PM – 8:00 PM</p>
+            </li>
+            <li class="flex items-center">
+              <span class="bg-pink-500 text-gray-900 font-semibold rounded-full w-8 h-8 flex justify-center items-center mr-4">•</span>
+              <p class="text-lg"><strong>Big Night Gala:</strong> 8:30 PM – 11:30 PM</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </article>
+    <!-- Glowing Top Border -->
+    <div class="relative top-0 left-0 w-full h-5 bg-gradient-to-r from-yellow-500 to-yellow-300 blur-lg opacity-80 z-10"></div>
+  <article id="tickets" class="relative text-white px-8">
+    <!-- Image -->
+    <img src="./img/tickets3.jpeg" class="d-block flex justify-center mx-auto rounded-lg w-1/2" alt="Tickets">
+    
+    <!-- Triangle -->
+    <div class="triangle2 mx-auto z-10 bg-gradient-to-b from-cyan-500 to-teal-300">
+      <span class="text-gray-950 pt-8 leading-10 text-2xl mx-16" style="font-family: 'Zen Dots', serif;">Tickets</span>
+    </div>
+  
+    <!-- Vertical Line -->
+    <div class="relative">
+      <div class="absolute inset-x-1/2 w-0.5 h-[660px] bg-teal-300 -translate-x-1/2 z-0"></div>
+    </div>
+  
+    <!-- Two Sections -->
+    <div class="flex flex-col md:flex-row justify-between items-start -mt-10">
+      <!-- Left Section: Mechanical Wonderland -->
+      <div class="w-full md:w-1/2 md:pr-4 text-center md:text-right">
+        <a href="#mechanical-wonderland">
+          <h3 class="text-2xl font-bold mb-4 text-yellow-500 hover:text-yellow-300 hover:cursor-pointer" style="font-family: 'Zen Dots', serif;">Mechanical Wonderland</h3>
+        </a>
+        <div class="space-y-6">
+          <!-- General Admission -->
+          <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+            <h4 class="text-lg font-semibold mb-2">General Admission</h4>
+            <p class="text-sm">Standard seating with great views of the performance</p>
+            <p class="text-xl font-bold mt-2">€25</p>
+            <button class="mt-4 bg-yellow-500 hover:bg-yellow-300 text-gray-950 px-4 py-2 rounded-lg font-semibold transition">Add</button>
+          </div>
+          <!-- VIP Experience -->
+          <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+            <h4 class="text-lg font-semibold mb-2">VIP Experience</h4>
+            <p class="text-sm">Premium seating, souvenir program, and exclusive photo op with steampunk bots</p>
+            <p class="text-xl font-bold mt-2">€60</p>
+            <button class="mt-4 bg-yellow-500 hover:bg-yellow-300 text-gray-950 px-4 py-2 rounded-lg font-semibold transition">Add</button>
+          </div>
+          <!-- Steampunk Explorer Pass -->
+          <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+            <h4 class="text-lg font-semibold mb-2">Steampunk Explorer Pass</h4>
+            <p class="text-sm">Includes tickets to both shows, exclusive merchandise, and workshops</p>
+            <p class="text-xl font-bold mt-2">€100</p>
+            <button class="mt-4 bg-yellow-500 hover:bg-yellow-300 text-gray-950 px-4 py-2 rounded-lg font-semibold transition">Add</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right Section: The Future Is Here -->
+      <div class="w-full md:w-1/2 md:pl-4 text-center md:text-left">
+        <a href="#future-is-here">
+          <h3 class="text-2xl font-bold mb-4 text-pink-500 hover:text-pink-600 hover:cursor-pointer" style="font-family: 'Zen Dots', serif;">The Future Is Here</h3>
+        </a>
+        <div class="space-y-6">
+          <!-- General Admission -->
+          <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+            <h4 class="text-lg font-semibold mb-2">General Admission</h4>
+            <p class="text-sm">Access to the main show and standard seating</p>
+            <p class="text-xl font-bold mt-2">€20</p>
+            <button class="mt-4 bg-pink-500 hover:bg-pink-600 text-gray-950 px-4 py-2 rounded-lg font-semibold transition">Add</button>
+          </div>
+          <!-- VIP Experience -->
+          <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+            <h4 class="text-lg font-semibold mb-2">VIP Experience</h4>
+            <p class="text-sm">Front-row seating, complimentary beverage, and a behind-the-scenes tour</p>
+            <p class="text-xl font-bold mt-2">€50</p>
+            <button class="mt-4 bg-pink-500 hover:bg-pink-600 text-gray-950 px-4 py-2 rounded-lg font-semibold transition">Add</button>
+          </div>
+          <!-- Family Pack -->
+          <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+            <h4 class="text-lg font-semibold mb-2">Family Pack</h4>
+            <p class="text-sm">Admission for 2 adults and 2 children</p>
+            <p class="text-xl font-bold mt-2">€60</p>
+            <button class="mt-4 bg-pink-500 hover:bg-pink-600 text-gray-950 px-4 py-2 rounded-lg font-semibold transition">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="flex justify-center text-xl my-2">Big Night Gala of the weekend = same ticket prices!</p>
+  
+    <!-- Call-to-Action Button -->
+    <div class="text-center mt-8">
+      <a href="#buy-tickets" class="inline-block px-6 py-3 mt-30 mb-8 bg-teal-500 hover:bg-cyan-400 text-gray-950 text-xl font-semibold rounded-lg transition duration-300">
+        Buy Tickets
+      </a>
+    </div>
+  </article>
+  <article id="contact" class="relative text-white py-16 px-8">
+    <!-- Glowing Top Border -->
+    <div class="absolute top-0 left-0 w-full h-5 bg-gradient-to-r from-cyan-400 to-teal-300 blur-lg opacity-80 z-10"></div>
+  
+    <!-- Content Section -->
+    <section class="relative text-center">
+      <!-- Heading -->
+      <h3 class="text-4xl font-bold mb-8 text-pink-500" style="font-family: 'Zen Dots', serif;">Contact</h3>
+      <p class="text-lg leading-relaxed mb-4">We’d love to hear from you!</p>
+      <p class="text-lg leading-relaxed mb-8">For inquiries, feedback, or group bookings, feel free to reach out to us:</p>
+    </section>
+  
+    <!-- Contact Details -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Left Column: Location & Contact Info -->
+      <div class="bg-gray-900 rounded-lg p-8 shadow-lg">
+        <h4 class="text-2xl font-bold mb-4 text-cyan-500" style="font-family: 'Zen Dots', serif;">📍 Location</h4>
+        <p class="text-lg leading-relaxed mb-6">
+          <strong>NeonTronic Circus</strong><br>Berlin, Germany
+        </p>
+        <h4 class="text-2xl font-bold mb-4 text-cyan-300" style="font-family: 'Zen Dots', serif;">📧 Email</h4>
+        <p class="text-lg leading-relaxed mb-6">info@neontroniccircus.com</p>
+        <h4 class="text-2xl font-bold mb-4 text-teal-300" style="font-family: 'Zen Dots', serif;">📞 Phone</h4>
+        <p class="text-lg leading-relaxed">+49 30 123 4567</p>
+      </div>
+  
+      <!-- Right Column: Social Media -->
+      <div class="bg-gray-900 rounded-lg p-8 shadow-lg">
+        <h4 class="text-2xl font-bold mb-4 text-yellow-500" style="font-family: 'Zen Dots', serif;">Follow Us on Social Media</h4>
+        <ul class="space-y-4 text-lg">
+          <li class="flex items-center">
+            <span class="bg-pink-500 text-gray-900 font-bold rounded-full w-8 h-8 flex justify-center items-center mr-4">📸</span>
+            Instagram: <a href="#" class="text-teal-400 hover:underline">@NeonTronicCircus</a>
+          </li>
+          <li class="flex items-center">
+            <span class="bg-blue-500 text-gray-900 font-bold rounded-full w-8 h-8 flex justify-center items-center mr-4">📘</span>
+            Facebook: <a href="#" class="text-teal-400 hover:underline">NeonTronicCircus</a>
+          </li>
+          <li class="flex items-center">
+            <span class="bg-cyan-500 text-gray-900 font-bold rounded-full w-8 h-8 flex justify-center items-center mr-4">🐦</span>
+            Twitter: <a href="#" class="text-teal-400 hover:underline">@NeonTronic</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Image Section -->
+    <div class="flex justify-center mt-12">
+      <img src="./img/contact.jpg" class="rounded-lg shadow-lg w-full" alt="Contact Us">
+    </div>
+  
+    <!-- Glowing Bottom Border -->
+    <div class="absolute bottom-0 left-0 w-full h-4 bg-gradient-to-r from-pink-500 to-pink-300 blur-lg opacity-80 z-10"></div>
+  </article>
+  </main>
+  <footer class="flex justify-between items-center flex-col md:flex-row px-8 py-4 bg-gray-900" style="font-family: 'Zen Dots', serif;">
+    <!-- Left Navigation -->
+    <nav class="flex space-x-6 lg:ml-20">
+      <a href="#gallery" class="text-white text-lg hover:text-pink-500 transition duration-300">Gallery</a>
+      <a href="#future-is-here" class="text-white text-lg hover:text-pink-500 transition duration-300">Shows</a>
+      <a href="#innovations" class="text-white text-lg hover:text-pink-500 transition duration-300">Innovations</a>
+    </nav>
+    
+    <!-- Footer Center Section -->
+    <div class="text-center text-gray-400 mt-4 md:mt-0">
+      <p class="text-sm">© 2024 NeonTronic Circus. All Rights Reserved.</p>
+      <p class="text-sm">Idea&Design by Kaspar Sinitsin; the content is AI-generated.</p>
+    </div>
+    
+    <!-- Right Navigation -->
+    <nav class="flex space-x-6 lg:mr-20">
+      <a href="#schedule" class="text-white text-lg hover:text-teal-400 transition duration-300">Schedule</a>
+      <a href="#tickets" class="text-white text-lg hover:text-teal-400 transition duration-300">Tickets</a>
+      <a href="#contact" class="text-white text-lg hover:text-teal-400 transition duration-300">Contact</a>
+    </nav>
+  </footer>
+<script src="./tailwind.config.js"></script>
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

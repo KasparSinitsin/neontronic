@@ -1,0 +1,29 @@
+/* In your global CSS or Tailwind config */
+.custom-top-triangle {
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  }
+  
+  .custom-bottom-triangle {
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  }
+
+    /* Triangle scaling effect */
+    .triangle {
+      transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;  /* Smooth scaling */
+      
+    }
+
+    /* When hovered, scale the triangle */
+    .glow {
+      transform: scale(1.20);  /* Slightly enlarge the triangle */
+    }
+
+    nav a:hover {
+      color: #ff49a4 !important; /* Equivalent to hover:text-pink-500 */
+    }
+    
+    .triangle2 {
+      width: 240px; /* Adjust size */
+      height: 120px;
+      clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+    }
